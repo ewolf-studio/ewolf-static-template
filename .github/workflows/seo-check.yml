@@ -1,0 +1,19 @@
+name: seo-check
+
+# Échoue si les artefacts SEO (balises injectées, llms.txt, robots.txt,
+# sitemap.xml) ne sont pas à jour par rapport à seo.config.json.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Vérifie que le SEO est à jour
+        run: npx -y github:ewolf-studio/ewolf-seo-kit build --check
