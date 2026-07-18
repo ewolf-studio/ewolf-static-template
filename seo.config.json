@@ -1,0 +1,15 @@
+{
+  "siteUrl": "https://exemple.ewolf.online",
+  "lang": "fr",
+  "title": "Nouveau site eWolf",
+  "description": "Décris ici ton site en une ou deux phrases indexables.",
+  "keywords": ["ewolf"],
+  "author": "Mister Wolfgang",
+  "siteName": "eWolf",
+  "locale": "fr_FR",
+  "image": "/assets/ewolf-mark-white.png",
+  "srOnly": "Nouveau site statique eWolf.",
+  "noscript": "Ce site fonctionne sans JavaScript.",
+  "sitemap": ["/"],
+  "robots": { "allow": true }
+}

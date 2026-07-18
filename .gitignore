@@ -1,0 +1,10 @@
+node_modules/
+
+# Secrets de déploiement (voir .env.example)
+.env
+.env.local
+
+# Artefacts générés par seo-kit (décommente si tu préfères ne pas les committer)
+# public/llms.txt
+# public/robots.txt
+# public/sitemap.xml

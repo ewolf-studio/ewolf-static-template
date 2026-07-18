@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/assets/ewolf-mark-white.png">
+<link rel="stylesheet" href="/styles/main.css">
+<!--
+  Les balises SEO (titre, description, Open Graph, Twitter, ai-content…)
+  sont generees par seo-kit a partir de seo.config.json.
+  Lance : npm run seo   (ne pas ajouter de balise titre en dur ici)
+-->
+<!-- seo-kit:head:start (généré — ne pas éditer à la main) -->
+<title>Nouveau site eWolf</title>
+<meta name="description" content="Décris ici ton site en une ou deux phrases indexables.">
+<meta name="keywords" content="ewolf">
+<link rel="canonical" href="https://exemple.ewolf.online/">
+<meta name="ai-content" content="https://exemple.ewolf.online/llms.txt">
+<link rel="alternate" type="text/markdown" href="https://exemple.ewolf.online/llms.txt" title="Version markdown">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Mister Wolfgang">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://exemple.ewolf.online/">
+<meta property="og:title" content="Nouveau site eWolf">
+<meta property="og:description" content="Décris ici ton site en une ou deux phrases indexables.">
+<meta property="og:image" content="https://exemple.ewolf.online/assets/ewolf-mark-white.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="eWolf">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nouveau site eWolf">
+<meta name="twitter:description" content="Décris ici ton site en une ou deux phrases indexables.">
+<meta name="twitter:image" content="https://exemple.ewolf.online/assets/ewolf-mark-white.png">
+<!-- seo-kit:head:end -->
+</head>
+<body>
+<!-- seo-kit:body:start (généré — ne pas éditer à la main) -->
+<p class="sr-only">Nouveau site statique eWolf. Version machine (texte) : https://exemple.ewolf.online/llms.txt</p>
+<noscript>
+  <p style="padding:20px;color:#ddd;font-family:system-ui,sans-serif;">Ce site fonctionne sans JavaScript.</p>
+  <p style="padding:0 20px 20px;color:#8a857a;font-family:system-ui,sans-serif;font-size:12px;">Version machine de cette page : https://exemple.ewolf.online/llms.txt</p>
+</noscript>
+<!-- seo-kit:body:end -->
+  <!-- seo-kit injecte ici sr-only + noscript : npm run seo -->
+
+  <main class="hero">
+    <img class="hero-logo" src="/assets/ewolf-mark-white.png" alt="eWolf STUDIO" width="120" height="120">
+    <h1 class="hero-brand">eWolf<span>STUDIO</span></h1>
+    <p class="hero-tagline">Template de site statique — prêt à l'emploi.</p>
+
+    <p class="hero-edit">
+      Modifiez <code>public/index.html</code> pour commencer.
+    </p>
+
+    <ul class="hero-steps">
+      <li><code>npm run dev</code> — serveur local (http://localhost:3000)</li>
+      <li><code>npm run seo</code> — génère SEO + llms.txt/robots/sitemap</li>
+      <li><code>npm run deploy</code> — met en ligne (SSH)</li>
+    </ul>
+  </main>
+
+  <footer class="foot">
+    <a href="https://ewolf.online/" target="_blank" rel="noopener">ewolf.online</a>
+  </footer>
+</body>
+</html>

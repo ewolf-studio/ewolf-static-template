@@ -1,0 +1,19 @@
+{
+  "name": "ewolf-static-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Template de site statique eWolf : page d'accueil par défaut, SEO/llms via seo-kit, déploiement SSH durci.",
+  "scripts": {
+    "dev": "serve -l 3000 public",
+    "start": "npm run dev",
+    "seo": "npx -y github:ewolf-studio/ewolf-seo-kit build",
+    "seo:check": "npx -y github:ewolf-studio/ewolf-seo-kit build --check",
+    "predeploy": "npm run seo",
+    "deploy": "bash deploy.sh",
+    "deploy:dry": "bash deploy.sh --dry",
+    "deploy:git": "git push origin main"
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}

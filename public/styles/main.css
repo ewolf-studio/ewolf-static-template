@@ -1,0 +1,83 @@
+/* Template eWolf — page d'accueil par défaut.
+   Remplace ce fichier par tes propres styles. */
+
+:root {
+  --bg: #0b0a0e;
+  --bg-2: #131118;
+  --text: #f5eede;
+  --text-2: #cbbf9f;
+  --muted: #6f6a5c;
+  --accent: #c0a9f8;         /* violet eWolf STUDIO */
+  --line: rgba(192,169,248,.22);
+  --code-bg: #1a1722;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  min-height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background:
+    radial-gradient(120% 80% at 50% 30%, var(--bg-2) 0%, var(--bg) 60%);
+  color: var(--text);
+  font-family: 'Manrope', system-ui, -apple-system, Segoe UI, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+/* Accessible pour lecteurs d'écran, invisible à l'écran (utilisé par seo-kit). */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+.hero { display: flex; flex-direction: column; align-items: center; gap: 18px; max-width: 560px; }
+
+.hero-logo {
+  width: 120px; height: 120px; object-fit: contain;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,.5));
+  animation: rise .6s ease both;
+}
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+.hero-brand {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-weight: 700; font-size: 40px; letter-spacing: -0.01em; line-height: 1;
+}
+.hero-brand span {
+  display: block; margin-top: 8px;
+  font-family: 'Manrope', system-ui, sans-serif; font-weight: 600;
+  font-size: 15px; letter-spacing: 0.36em; color: var(--accent);
+}
+
+.hero-tagline { color: var(--text-2); font-size: 16px; }
+
+.hero-edit {
+  margin-top: 10px; font-size: 15px; color: var(--text);
+}
+.hero-edit code, .hero-steps code {
+  font-family: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: var(--code-bg); border: 1px solid var(--line);
+  padding: 2px 8px; border-radius: 6px; font-size: .92em; color: var(--accent);
+}
+
+.hero-steps {
+  list-style: none; margin-top: 14px; display: flex; flex-direction: column; gap: 10px;
+  font-size: 14px; color: var(--muted);
+}
+
+.foot { font-size: 13px; letter-spacing: .04em; }
+.foot a { color: var(--muted); text-decoration: none; }
+.foot a:hover { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo { animation: none; }
+}
